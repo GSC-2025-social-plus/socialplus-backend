@@ -76,14 +76,17 @@ Google Cloud Functions(2세대, Python), Cloud Firestore, Google Gemini API를 �
 백엔드는 **표준 HTTP API**를 통해 통신하므로,  
 프론트엔드 개발자는 함수 URL만 알면 됩니다.
 
-1. **기본 URL 구조**  
+
+1. **요청 함수 URL 구조**  
    ```
    https://[REGION]-[PROJECT_ID].cloudfunctions.net/
    ```
 2. **엔드포인트**  
    - `startConversation`  
    - `sendMessage`
-
+3. **요청함수url** 
+   https://sendmessage-imrcv7okwa-uc.a.run.app
+   https://startconversation-imrcv7okwa-uc.a.run.app
 ---
 
 ### 1) startConversation 호출 예시 (JavaScript)
