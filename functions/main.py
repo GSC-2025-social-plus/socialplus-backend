@@ -294,7 +294,7 @@ def sendMessage(req: https_fn.Request):
         # 사용자 입력 분석 (시나리오 analysis_criteria 전달)
         # analyze_user_input_with_ai 함수는 chatbot_service에 있다고 가정
         # TODO: chatbot_service.py 파일에 이 함수가 정의되어 있어야 합니다.
-        analysis_result = chatbot_service.analyze_user_input_with_ai(user_message, analysis_criteria)
+        analysis_result = chatbot_service.analyze_user_input_with_ai(user_message, analysis_criteria, session_data.get('system_instruction',''))
 
 
         # 미션 상태 업데이트 (현재 미션 상태, 분석 결과 전달)
